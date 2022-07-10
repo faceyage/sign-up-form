@@ -1,4 +1,164 @@
-body {
-    background-color: #0D1117;
+/* Main */
+* {
+    font: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+@font-face {
+    font-family: "Norse Bold";
+    src: url("Norse-Bold.otf");
+}
+.main {
+    display: flex;
+}
+
+/* Background - Logo section */
+
+.background-section {
+    position: relative;
+}
+
+.logo-section {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    position: absolute;
+    width: 100%;
+    top: 250px;
+}
+
+.logo-section > div {
+    font-weight: bold;
+    font-size: 50px;
+    font-family: "Norse Bold";
+
+}
+
+.logo-section > img {
+    height: 100px;
+}
+
+/* Right Section */
+
+.sign-up-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #F9FAFB;
+}
+
+.sign-up-section > * {
+    flex: 1;
+}
+
+/* Info Section */
+.info {
+    position: relative;
+}
+
+.info > div {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    height: 100px;
+    width: 700px;
+}
+
+/* Sign Up form */
+
+.sign-up-forms {
+    background-color: white;
+    box-shadow: 0px 5px 20px -4px #515656;
+    padding: 30px 50px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+fieldset {
+    display: flex;
+    justify-content: flex-start;
+    gap: 130px;
+}
+
+fieldset > * {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input_container {
+    flex: 1;
+}
+
+#password_validation_text {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input {
+    outline: none;
+    border: 2px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 15px;
+}
+label, input {
+    display: block;
+}
+
+input:focus {
+    border: 2px solid blue;
+    box-shadow: 0px 5px 20px -4px #515656;
+    outline: none;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+/* Buttons section */
+.form_buttons {
+    padding: 30px 50px;
+}
+
+.form_buttons > div {
+    margin-top: 30px;
+}
+
+.btn {
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+    border-radius: 10px;
+    background-color: #596D48;
+    cursor: pointer;
+}
+
+.form_buttons > div {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
 }

@@ -6,9 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link href="style.css" rel="stylesheet">
-    <script src="script.js" defer> </script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-
+    <div class="main">
+        <div class="background-section">
+            <img src="background.avif" alt="background image green leef" class="background">
+            <div class="logo-section">
+                <img src="odin-lined.png" alt="odin logo" class="odin-logo">
+                <div class="odin-text">ODIN PROJECT</div>
+            </div>
+        </div>
+        <div class="sign-up-section">
+            <div class="info">
+                <div>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started. <br><br> You know you want to.</div>
+            </div>
+            <div class="sign-up-forms">
+                <form action="" id="register_form">
+                    <fieldset>
+                        <div class="left_column">
+                            <legend>Let's do this!</legend>
+                            <div class="input_container">
+                                <label for="firstName">FIRST NAME</label>
+                                <input type="text" id="firstName" name="firstName">
+                            </div>
+                            <div class="input_container">
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="input_container">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name="password" id="password" required>
+                                <div id="password_validation_text"></div>
+                            </div>
+                        </div>
+                        <div class="right_column">
+                            <div class="input_container"></div>
+                            <div class="input_container">
+                                <label for="lastName">LAST NAME</label>
+                                <input type="text" id="lastName" name="lastName">
+                            </div>
+                            <div class="input_container">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" name="phone" id="phone">
+                            </div>
+                            <div class="input_container">
+                                <label for="password_confirmation">CONFIRM PASSWORD</label>
+                                <input type="password" name="password_confirmation" id="password_confirmation" required>
+                            </div>
+                        </div>
+                        </fieldset>
+                    </form>
+            </div>
+            <div class="form_buttons">
+                <button type="submit" form="register_form" class="btn">Create Account</button>
+                <div>Already have an account? <a href="">Log in</a></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
